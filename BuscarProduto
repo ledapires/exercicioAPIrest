@@ -1,0 +1,36 @@
+/* Buscar um produto */
+
+URL: http://165.227.93.41/lojinha/
+Método: GET /produto Buscar um produto
+Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjA5IiwidXN1YXJpb2xvZ2luIjoibGVkYS5waXJlcyIsInVzdWFyaW9ub21lIjoiTGVkYSBQaXJlcyJ9.cYyN3tvpiBvvNNoleLEgHNcxFc2m-kyPI9kqUA8RW-M
+
+Responses
+Code 	Description
+200   Sucesso ao buscar os produtos
+Example Value
+{
+   "data": [
+   {
+     "produtoid": 0,
+     "produtonome": "string",
+     "produtovalor": 0,
+     "produtocores": [
+     "string"
+   ],
+      "componentes": [
+   {
+       "componenteid": 0,
+       "componentenome": "string",
+       "componentequantidade": 0
+   }
+                    ]
+   }
+   ],
+       "message": "string",
+       "error": "string"
+}
+
+
+400     Problemas na requisição
+401     Não autorizado
+
