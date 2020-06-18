@@ -1,0 +1,49 @@
+Adicionar um novo produto
+
+URL: http://165.227.93.41/lojinha/produto
+Método: POST /produto Adicionar um novo produto
+
+Body
+{
+    "produtonome": "Vestido Longo",
+    "produtovalor": 1,
+    "produtocores": [
+        "Preto","Amarelo"
+   ],
+ "componentes": [
+   {
+     "componentenome": "string",
+     "componentequantidade": 0
+   }
+   ]
+}
+
+
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjA5IiwidXN1YXJpb2xvZ2luIjoibGVkYS5waXJlcyIsInVzdWFyaW9ub21lIjoiTGVkYSBQaXJlcyJ9.cYyN3tvpiBvvNNoleLEgHNcxFc2m-kyPI9kqUA8RW-M
+
+Code   Description
+201    Sucesso ao criar o produto
+
+Example Value
+{
+ "data": {
+ "produtoid": 0,
+ "produtonome": "string",
+ "produtovalor": 0,
+ "produtocores": [
+ "string"
+ ],
+ "componentes": [
+ {
+ "componenteid": 0,
+ "componentenome": "string",
+ "componentequantidade": 0
+ }
+ ]
+ },
+ "message": "string",
+ "error": "string"
+}
+
+400   Problemas na requisição
+401   Não autorizado
