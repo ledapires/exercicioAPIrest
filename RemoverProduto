@@ -1,0 +1,13 @@
+/* Remover um produto */
+
+URL: http://165.227.93.41/lojinha/
+Método: DELETE /produto/{produtoId} Remover um produto
+
+ProdutoID: 6783
+
+Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjA5IiwidXN1YXJpb2xvZ2luIjoibGVkYS5waXJlcyIsInVzdWFyaW9ub21lIjoiTGVkYSBQaXJlcyJ9.cYyN3tvpiBvvNNoleLEgHNcxFc2m-kyPI9kqUA8RW-M
+
+Code      Description
+204       Sucesso ao remover o produto
+401       Não autorizado
+403       Proibido
