@@ -1,0 +1,52 @@
+/* Editar um produto */
+
+URL: http://165.227.93.41/lojinha/
+Método: PUT /produto/6783
+
+Body:
+{
+    "produtonome": "Vestido Longo",
+    "produtovalor": 100.00,
+    "produtocores": [
+        "Preto"
+    ],
+    "componentes": [
+        {
+        	"componenteid": 1707,
+            "componentenome": "Cinto Marron",
+            "componentequantidade": 1
+        }
+    ]
+}
+
+Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjA5IiwidXN1YXJpb2xvZ2luIjoibGVkYS5waXJlcyIsInVzdWFyaW9ub21lIjoiTGVkYSBQaXJlcyJ9.cYyN3tvpiBvvNNoleLEgHNcxFc2m-kyPI9kqUA8RW-M
+
+Response
+
+Code    Description
+200     Sucesso ao alterar o produto
+
+Example Value
+{
+   "data": {
+     "produtoid": 0,
+     "produtonome": "string",
+     "produtovalor": 0,
+     "produtocores": [
+     "string"
+   ],
+     "componentes": [
+   {
+     "componenteid": 0,
+     "componentenome": "string",
+     "componentequantidade": 0
+   }
+   ]
+   },
+     "message": "string",
+    "error": "string"
+}
+
+400     Problemas na requisição
+401     Não autorizado
+403     Proibido
